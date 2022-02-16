@@ -1,4 +1,5 @@
-/.idea
+wedge_tool/.idea
+.idea
 /pdg_example
 *.exr
 *.bgeo.sc

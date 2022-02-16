@@ -1,0 +1,39 @@
+The selected subnet has references to nodes outside
+the subnet, or has references that use absolute paths
+to operators inside the subnet.  These references
+should be converted to relative internal references
+or this operator type may not work properly in other
+Hip files.
+
+
+/obj/topnet1/subnet1/ropcomposite1/coppath: /tasks/topnet1/mosaic/mosaic1
+        Unable to resolve node.
+/obj/topnet1/subnet1/ropcomposite1/ropnet1/comp1/coppath: /tasks/topnet1/mosaic/mosaic1
+        Unable to resolve node.
+/obj/topnet1/subnet1/ropcomposite1/ropfetch1/oppath: /tasks/topnet1/mosaic/mosaic1
+        Unable to resolve node.
+/obj/topnet1/subnet1/gl_render_preview/roppath: /tasks/topnet1/opengl_render/opengl_preview
+        Unable to resolve node.
+/obj/topnet1/subnet1/gl_render/roppath: /tasks/topnet1/opengl_render/opengl
+        Unable to resolve node.
+/obj/topnet1/subnet1/smoke_sim/soppath: /obj/smoke_import/import_pyrofields
+        Unable to resolve node.
+/obj/topnet1/subnet1/smoke_sim/ropnet1/geometry1/soppath: /obj/smoke_import/import_pyrofields
+        Unable to resolve node.
+/obj/topnet1/subnet1/smoke_sim/ropfetch1/oppath: /obj/smoke_import/import_pyrofields
+        Unable to resolve node.
+/obj/topnet1/subnet1/smoke_src/soppath: /obj/smoke_src/create_density_volume
+        Unable to resolve node.
+/obj/topnet1/subnet1/smoke_src/ropnet1/geometry1/soppath: /obj/smoke_src/create_density_volume
+        Unable to resolve node.
+/obj/topnet1/subnet1/smoke_src/ropfetch1/oppath: /obj/smoke_src/create_density_volume
+        Unable to resolve node.
+/obj/topnet1/subnet1/opengl_render/opengl_preview/camera: /obj/render_cam
+        Unable to resolve node.
+/obj/topnet1/subnet1/opengl_render/opengl_preview: references /obj
+        which is outside the network being saved.
+/obj/topnet1/subnet1/opengl_render/opengl/camera: /obj/render_cam
+        Unable to resolve node.
+/obj/topnet1/subnet1/opengl_render/opengl: references /obj
+        which is outside the network being saved.
+Do you wish to save anyway?
