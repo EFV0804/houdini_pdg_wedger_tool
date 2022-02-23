@@ -7,3 +7,6 @@ wedge_tool/__pycache__
 wedge_tool/backup/**
 wedge_example/backup/**
 wedge_example/prev/**
+wedge_tool/render/**
+wedge_tool/geo/**
+wedge_tool/geo/**
