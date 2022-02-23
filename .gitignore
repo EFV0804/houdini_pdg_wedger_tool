@@ -3,7 +3,7 @@ wedge_tool/.idea
 /pdg_example
 *.exr
 *.bgeo.sc
-/wedge_tool/__pycache__
-/wedge_tool/backup
-/wedge_example/backup
-/wedge_example/prev
+wedge_tool/__pycache__
+wedge_tool/backup
+wedge_example/backup
+wedge_example/prev
