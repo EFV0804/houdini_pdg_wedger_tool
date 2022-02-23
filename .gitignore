@@ -4,6 +4,6 @@ wedge_tool/.idea
 *.exr
 *.bgeo.sc
 wedge_tool/__pycache__
-wedge_tool/backup
-wedge_example/backup
-wedge_example/prev
+wedge_tool/backup/
+wedge_example/backup/
+wedge_example/prev/
