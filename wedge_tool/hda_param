@@ -1,0 +1,392 @@
+{
+    name	selectedparms
+
+    group {
+        name    "folder1"
+        label   "Wedge"
+
+        parm {
+            name    "wedge_count"
+            baseparm
+            label   "Wedge Count"
+            export  none
+        }
+        multiparm {
+            name    "wedges"
+            label    "Wedges"
+            baseparm
+
+            parm {
+                name    "name#"
+                baseparm
+                label   "Attribute Name"
+                export  none
+            }
+            parm {
+                name    "type#"
+                baseparm
+                label   "Attribute Type"
+                export  none
+            }
+            parm {
+                name    "wedge_type#"
+                baseparm
+                label   "Wedge Type"
+                export  none
+            }
+            parm {
+                name    "colorrangestart#"
+                baseparm
+                label   "Start"
+                export  none
+            }
+            parm {
+                name    "colorrangeend#"
+                baseparm
+                label   "End"
+                export  none
+            }
+            parm {
+                name    "intvalue#"
+                baseparm
+                label   "Value"
+                export  none
+            }
+            parm {
+                name    "floatvalue#"
+                baseparm
+                label   "Value"
+                export  none
+            }
+            parm {
+                name    "floatrange#"
+                baseparm
+                label   "Start/End"
+                export  none
+            }
+            parm {
+                name    "floatrangestart#"
+                baseparm
+                label   "Start"
+                export  none
+            }
+            parm {
+                name    "floatrangeend#"
+                baseparm
+                label   "End"
+                export  none
+            }
+            parm {
+                name    "intrangestart#"
+                baseparm
+                label   "Start"
+                export  none
+            }
+            parm {
+                name    "intrangeend#"
+                baseparm
+                label   "End"
+                export  none
+            }
+            parm {
+                name    "intrange#"
+                baseparm
+                label   "Start/End"
+                export  none
+            }
+            parm {
+                name    "intvector#"
+                baseparm
+                label   "Int Vector"
+                export  none
+            }
+            parm {
+                name    "floatvector#"
+                baseparm
+                label   "Float Vector"
+                export  none
+            }
+            parm {
+                name    "color#"
+                baseparm
+                label   "Color"
+                export  none
+            }
+            multiparm {
+                name    "values#"
+                label    "Values"
+                baseparm
+                disablewhen "{ name# == \"\" }"
+                hidewhen "{ wedge_type# != 2 }"
+
+                parm {
+                    name    "floatvalues#_#"
+                    baseparm
+                    label   "Float"
+                    export  none
+                }
+                parm {
+                    name    "intvalues#_#"
+                    baseparm
+                    label   "Int"
+                    export  none
+                }
+                parm {
+                    name    "floatvectorvalues#_#"
+                    baseparm
+                    label   "Float Vector"
+                    export  none
+                }
+                parm {
+                    name    "intvectorvalues#_#"
+                    baseparm
+                    label   "Int Vector"
+                    export  none
+                }
+                parm {
+                    name    "colorvalues#_#"
+                    baseparm
+                    label   "Color"
+                    export  none
+                }
+            }
+
+        }
+
+    }
+
+    group {
+        name    "folder1_1"
+        label   "geo_src"
+
+        parm {
+            name    "framegen"
+            baseparm
+            label   "Evaluate Using"
+            export  none
+        }
+        parm {
+            name    "framerange"
+            baseparm
+            label   "Frame Range"
+            export  none
+        }
+        parm {
+            name    "soppathgeo"
+            baseparm
+            label   "SOP path"
+            export  none
+        }
+        parm {
+            name    "outpathgeo"
+            baseparm
+            label   "Output File"
+            export  none
+        }
+        parm {
+            name    "framebatch"
+            baseparm
+            label   "Frame per Batch"
+            export  none
+        }
+        parm {
+            name    "allframebatch"
+            baseparm
+            label   "All Frames in one Batch"
+            export  none
+        }
+    }
+
+    group {
+        name    "folder1_2"
+        label   "sim"
+
+        parm {
+            name    "generation"
+            baseparm
+            label   "Generate When"
+            export  none
+        }
+        parm {
+            name    "cachemode"
+            baseparm
+            label   "Cache Mode"
+            export  none
+        }
+        parm {
+            name    "soppathsim"
+            baseparm
+            label   "Sop Path"
+            export  none
+        }
+        parm {
+            name    "outputgeosim"
+            baseparm
+            label   "Output"
+            export  none
+        }
+        parm {
+            name    "framebatch3"
+            baseparm
+            label   "Frame per Batch"
+            export  none
+        }
+        parm {
+            name    "allbatch"
+            baseparm
+            label   "All Batch"
+            export  none
+        }
+    }
+
+    group {
+        name    "folder1_3"
+        label   "render"
+
+        groupsimple {
+            name    "opengl2"
+            label   "OpenGL"
+
+            parm {
+                name    "quility"
+                baseparm
+                label   "Quality"
+                export  none
+            }
+            parm {
+                name    "framebatch2"
+                baseparm
+                label   "Frame per Batch"
+                export  none
+            }
+            parm {
+                name    "allframebatch2"
+                baseparm
+                label   "All Frames in one Batch"
+                export  none
+            }
+            parm {
+                name    "camera"
+                baseparm
+                label   "Camera"
+                export  none
+            }
+            parm {
+                name    "scenepath"
+                baseparm
+                label   "Scene"
+                export  none
+            }
+            parm {
+                name    "forceobjects"
+                baseparm
+                label   "Force Objects"
+                export  none
+            }
+            parm {
+                name    "candidateobjects"
+                baseparm
+                label   "Candidate Objects"
+                invisible
+                export  none
+            }
+            parm {
+                name    "outputimage"
+                baseparm
+                label   "Output Image"
+                export  none
+            }
+            parm {
+                name    "antialias"
+                baseparm
+                label   "Anti Aliasing"
+                invisible
+                export  none
+            }
+            parm {
+                name    "lightsample"
+                baseparm
+                label   "Light Samples"
+                invisible
+                export  none
+            }
+        }
+
+        parm {
+            name    "sepparm"
+            baseparm
+            label   "Separator"
+            export  none
+        }
+        groupsimple {
+            name    "compositing2"
+            label   "Compositing"
+
+            parm {
+                name    "overlaytext"
+                baseparm
+                label   "Overlay Text"
+                export  none
+            }
+            parm {
+                name    "outputpicture"
+                baseparm
+                label   "Output Picture"
+                export  none
+            }
+            parm {
+                name    "allbatch2"
+                baseparm
+                label   "All Batch"
+                invisible
+                export  none
+            }
+        }
+
+        groupsimple {
+            name    "mosaic2"
+            label   "Mosaic"
+
+            parm {
+                name    "usecoppath"
+                baseparm
+                label   "Use External COP"
+                invisible
+                export  none
+            }
+            parm {
+                name    "coppath"
+                baseparm
+                label   "COP path"
+                export  none
+            }
+            parm {
+                name    "allbatch3"
+                baseparm
+                label   "All Frames in Batch"
+                export  none
+            }
+            parm {
+                name    "framesperbatch"
+                baseparm
+                label   "Frames per Batch"
+                export  none
+            }
+        }
+
+    }
+
+    parm {
+        name    "sepparm2"
+        baseparm
+        label   "Separator"
+        export  none
+    }
+    parm {
+        name    "make_wedger"
+        baseparm
+        label   "Make Wedger"
+        export  none
+    }
+
+}
