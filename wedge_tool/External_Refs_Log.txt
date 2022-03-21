@@ -1,0 +1,63 @@
+The selected subnet has references to nodes outside
+the subnet, or has references that use absolute paths
+to operators inside the subnet.  These references
+should be converted to relative internal references
+or this operator type may not work properly in other
+Hip files.
+
+
+/obj/topnet2/subnet1/CTRL: references /obj/smoke_src/create_density_volume
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /obj
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /obj/render_smoke
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /obj/render_cam
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /obj/render_background
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /obj/render_sphere
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /tasks/topnet1/mosaic/mosaic1
+        which is outside the network being saved.
+/obj/topnet2/subnet1/CTRL: references /obj/smoke_import/import_pyrofields
+        which is outside the network being saved.
+/obj/topnet2/subnet1/mantra_render_preview: references /tasks/topnet1/render_nodes/mantra_preview
+        which is outside the network being saved.
+/obj/topnet2/subnet1/mantra_render_hd: references /tasks/topnet1/render_nodes/mantra_HD
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_HD: references /obj/render_smoke
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_HD: references /obj/render_cam
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_HD: references /obj/render_background
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_HD: references /obj/render_sphere
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_preview: references /obj/render_smoke
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_preview: references /obj/render_cam
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_preview: references /obj/render_background
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/mantra_preview: references /obj/render_sphere
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl_preview: references /obj
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl_preview: references /obj/render_smoke
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl_preview: references /obj/render_cam
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl_preview: references /obj/render_background
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl_preview: references /obj/render_sphere
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl: references /obj/render_smoke
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl: references /obj/render_cam
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl: references /obj/render_background
+        which is outside the network being saved.
+/obj/topnet2/subnet1/render_nodes/opengl: references /obj/render_sphere
+        which is outside the network being saved.
+Do you wish to save anyway?

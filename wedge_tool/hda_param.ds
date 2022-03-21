@@ -1,0 +1,805 @@
+{
+    name	selectedparms
+
+    group {
+        name    "folder3"
+        label   "Wedge"
+
+        group {
+            name    "folder4"
+            label   "hda_param"
+            grouptag { "import_enable" "1" }
+            grouptag { "import_source" "$HIP/hda_param" }
+
+            group {
+                name    "folder5"
+                label   "Wedge"
+                grouptag { "import_source" "$HIP/hda_param" }
+                grouptag { "import_token" "folder1:Wedge" }
+
+                parm {
+                    name    "wedge_count2"
+                    baseparm
+                    label   "Wedge Count"
+                    export  none
+                }
+                multiparm {
+                    name    "wedges2"
+                    label    "Wedges"
+                    baseparm
+                    parmtag { "import_source" "$HIP/hda_param" }
+                    parmtag { "import_token" "wedges" }
+
+                    parm {
+                        name    "name#_2"
+                        baseparm
+                        label   "Attribute Name"
+                        export  none
+                    }
+                    parm {
+                        name    "type#_2"
+                        baseparm
+                        label   "Attribute Type"
+                        export  none
+                    }
+                    parm {
+                        name    "wedge_type#_2"
+                        baseparm
+                        label   "Wedge Type"
+                        export  none
+                    }
+                    parm {
+                        name    "colorrangestart#_2"
+                        baseparm
+                        label   "Start"
+                        export  none
+                    }
+                    parm {
+                        name    "colorrangeend#_2"
+                        baseparm
+                        label   "End"
+                        export  none
+                    }
+                    parm {
+                        name    "intvalue#_2"
+                        baseparm
+                        label   "Value"
+                        export  none
+                    }
+                    parm {
+                        name    "floatvalue#_2"
+                        baseparm
+                        label   "Value"
+                        export  none
+                    }
+                    parm {
+                        name    "floatrange#_2"
+                        baseparm
+                        label   "Start/End"
+                        export  none
+                    }
+                    parm {
+                        name    "floatrangestart#_2"
+                        baseparm
+                        label   "Start"
+                        export  none
+                    }
+                    parm {
+                        name    "floatrangeend#_2"
+                        baseparm
+                        label   "End"
+                        export  none
+                    }
+                    parm {
+                        name    "intrangestart#_2"
+                        baseparm
+                        label   "Start"
+                        export  none
+                    }
+                    parm {
+                        name    "intrangeend#_2"
+                        baseparm
+                        label   "End"
+                        export  none
+                    }
+                    parm {
+                        name    "intrange#_2"
+                        baseparm
+                        label   "Start/End"
+                        export  none
+                    }
+                    parm {
+                        name    "intvector#_2"
+                        baseparm
+                        label   "Int Vector"
+                        export  none
+                    }
+                    parm {
+                        name    "floatvector#_2"
+                        baseparm
+                        label   "Float Vector"
+                        export  none
+                    }
+                    parm {
+                        name    "color#_2"
+                        baseparm
+                        label   "Color"
+                        export  none
+                    }
+                    multiparm {
+                        name    "values#_2"
+                        label    "Values"
+                        baseparm
+                        disablewhen "{ name# == \"\" }"
+                        hidewhen "{ wedge_type# != 2 }"
+                        parmtag { "import_source" "$HIP/hda_param" }
+                        parmtag { "import_token" "values#" }
+
+                        parm {
+                            name    "floatvalues#_#_2"
+                            baseparm
+                            label   "Float"
+                            export  none
+                        }
+                        parm {
+                            name    "intvalues#_#_2"
+                            baseparm
+                            label   "Int"
+                            export  none
+                        }
+                        parm {
+                            name    "floatvectorvalues#_#_2"
+                            baseparm
+                            label   "Float Vector"
+                            export  none
+                        }
+                        parm {
+                            name    "intvectorvalues#_#_2"
+                            baseparm
+                            label   "Int Vector"
+                            export  none
+                        }
+                        parm {
+                            name    "colorvalues#_#_2"
+                            baseparm
+                            label   "Color"
+                            export  none
+                        }
+                    }
+
+                }
+
+            }
+
+            group {
+                name    "folder5_1"
+                label   "geo_src"
+                grouptag { "import_source" "$HIP/hda_param" }
+                grouptag { "import_token" "folder1:geo_src" }
+
+                parm {
+                    name    "framegen2"
+                    baseparm
+                    label   "Evaluate Using"
+                    export  none
+                }
+                parm {
+                    name    "framerange4"
+                    baseparm
+                    label   "Frame Range"
+                    export  none
+                }
+                parm {
+                    name    "soppathgeo2"
+                    baseparm
+                    label   "SOP path"
+                    export  none
+                }
+                parm {
+                    name    "outpathgeo2"
+                    baseparm
+                    label   "Output File"
+                    export  none
+                }
+                parm {
+                    name    "framebatch4"
+                    baseparm
+                    label   "Frame per Batch"
+                    export  none
+                }
+                parm {
+                    name    "allframebatch3"
+                    baseparm
+                    label   "All Frames in one Batch"
+                    export  none
+                }
+            }
+
+            group {
+                name    "folder5_2"
+                label   "sim"
+                grouptag { "import_source" "$HIP/hda_param" }
+                grouptag { "import_token" "folder1:sim" }
+
+                parm {
+                    name    "generation2"
+                    baseparm
+                    label   "Generate When"
+                    export  none
+                }
+                parm {
+                    name    "cachemode2"
+                    baseparm
+                    label   "Cache Mode"
+                    export  none
+                }
+                parm {
+                    name    "soppathsim2"
+                    baseparm
+                    label   "Sop Path"
+                    export  none
+                }
+                parm {
+                    name    "outputgeosim2"
+                    baseparm
+                    label   "Output"
+                    export  none
+                }
+                parm {
+                    name    "framebatch5"
+                    baseparm
+                    label   "Frame per Batch"
+                    export  none
+                }
+                parm {
+                    name    "allbatch4"
+                    baseparm
+                    label   "All Batch"
+                    export  none
+                }
+            }
+
+            group {
+                name    "folder5_3"
+                label   "render"
+                grouptag { "import_source" "$HIP/hda_param" }
+                grouptag { "import_token" "folder1:render" }
+
+                groupsimple {
+                    name    "folder9"
+                    label   "OpenGL"
+                    grouptag { "import_source" "$HIP/hda_param" }
+                    grouptag { "import_token" "opengl2:OpenGL" }
+
+                    parm {
+                        name    "quility2"
+                        baseparm
+                        label   "Quality"
+                        export  none
+                    }
+                    parm {
+                        name    "framebatch6"
+                        baseparm
+                        label   "Frame per Batch"
+                        export  none
+                    }
+                    parm {
+                        name    "allframebatch4"
+                        baseparm
+                        label   "All Frames in one Batch"
+                        export  none
+                    }
+                    parm {
+                        name    "camera2"
+                        baseparm
+                        label   "Camera"
+                        export  none
+                    }
+                    parm {
+                        name    "scenepath2"
+                        baseparm
+                        label   "Scene"
+                        export  none
+                    }
+                    parm {
+                        name    "forceobjects2"
+                        baseparm
+                        label   "Force Objects"
+                        export  none
+                    }
+                    parm {
+                        name    "candidateobjects2"
+                        baseparm
+                        label   "Candidate Objects"
+                        invisible
+                        export  none
+                    }
+                    parm {
+                        name    "outputimage2"
+                        baseparm
+                        label   "Output Image"
+                        export  none
+                    }
+                    parm {
+                        name    "antialias2"
+                        baseparm
+                        label   "Anti Aliasing"
+                        invisible
+                        export  none
+                    }
+                    parm {
+                        name    "lightsample2"
+                        baseparm
+                        label   "Light Samples"
+                        invisible
+                        export  none
+                    }
+                }
+
+                parm {
+                    name    "sepparm3"
+                    baseparm
+                    label   "Separator"
+                    export  none
+                }
+                groupsimple {
+                    name    "folder10"
+                    label   "Compositing"
+                    grouptag { "import_source" "$HIP/hda_param" }
+                    grouptag { "import_token" "compositing2:Compositing" }
+
+                    parm {
+                        name    "overlaytext2"
+                        baseparm
+                        label   "Overlay Text"
+                        export  none
+                    }
+                    parm {
+                        name    "outputpicture2"
+                        baseparm
+                        label   "Output Picture"
+                        export  none
+                    }
+                    parm {
+                        name    "allbatch5"
+                        baseparm
+                        label   "All Batch"
+                        invisible
+                        export  none
+                    }
+                }
+
+                groupsimple {
+                    name    "folder11"
+                    label   "Mosaic"
+                    grouptag { "import_source" "$HIP/hda_param" }
+                    grouptag { "import_token" "mosaic2:Mosaic" }
+
+                    parm {
+                        name    "usecoppath2"
+                        baseparm
+                        label   "Use External COP"
+                        invisible
+                        export  none
+                    }
+                    parm {
+                        name    "coppath2"
+                        baseparm
+                        label   "COP path"
+                        export  none
+                    }
+                    parm {
+                        name    "allbatch6"
+                        baseparm
+                        label   "All Frames in Batch"
+                        export  none
+                    }
+                    parm {
+                        name    "framesperbatch2"
+                        baseparm
+                        label   "Frames per Batch"
+                        export  none
+                    }
+                }
+
+            }
+
+            parm {
+                name    "sepparm4"
+                baseparm
+                label   "Separator"
+                export  none
+            }
+            parm {
+                name    "make_wedger2"
+                baseparm
+                label   "Make Wedger"
+                export  none
+            }
+        }
+
+        parm {
+            name    "wedge_count"
+            baseparm
+            label   "Wedge Count"
+            export  none
+        }
+        multiparm {
+            name    "wedges"
+            label    "Wedges"
+            baseparm
+
+            parm {
+                name    "name#"
+                baseparm
+                label   "Attribute Name"
+                export  none
+            }
+            parm {
+                name    "type#"
+                baseparm
+                label   "Attribute Type"
+                export  none
+            }
+            parm {
+                name    "wedge_type#"
+                baseparm
+                label   "Wedge Type"
+                export  none
+            }
+            parm {
+                name    "colorrangestart#"
+                baseparm
+                label   "Start"
+                export  none
+            }
+            parm {
+                name    "colorrangeend#"
+                baseparm
+                label   "End"
+                export  none
+            }
+            parm {
+                name    "intvalue#"
+                baseparm
+                label   "Value"
+                export  none
+            }
+            parm {
+                name    "floatvalue#"
+                baseparm
+                label   "Value"
+                export  none
+            }
+            parm {
+                name    "floatrange#"
+                baseparm
+                label   "Start/End"
+                export  none
+            }
+            parm {
+                name    "floatrangestart#"
+                baseparm
+                label   "Start"
+                export  none
+            }
+            parm {
+                name    "floatrangeend#"
+                baseparm
+                label   "End"
+                export  none
+            }
+            parm {
+                name    "intrangestart#"
+                baseparm
+                label   "Start"
+                export  none
+            }
+            parm {
+                name    "intrangeend#"
+                baseparm
+                label   "End"
+                export  none
+            }
+            parm {
+                name    "intrange#"
+                baseparm
+                label   "Start/End"
+                export  none
+            }
+            parm {
+                name    "intvector#"
+                baseparm
+                label   "Int Vector"
+                export  none
+            }
+            parm {
+                name    "floatvector#"
+                baseparm
+                label   "Float Vector"
+                export  none
+            }
+            parm {
+                name    "color#"
+                baseparm
+                label   "Color"
+                export  none
+            }
+            multiparm {
+                name    "values#"
+                label    "Values"
+                baseparm
+                disablewhen "{ name# == \"\" }"
+                hidewhen "{ wedge_type# != 2 }"
+
+                parm {
+                    name    "floatvalues#_#"
+                    baseparm
+                    label   "Float"
+                    export  none
+                }
+                parm {
+                    name    "intvalues#_#"
+                    baseparm
+                    label   "Int"
+                    export  none
+                }
+                parm {
+                    name    "floatvectorvalues#_#"
+                    baseparm
+                    label   "Float Vector"
+                    export  none
+                }
+                parm {
+                    name    "intvectorvalues#_#"
+                    baseparm
+                    label   "Int Vector"
+                    export  none
+                }
+                parm {
+                    name    "colorvalues#_#"
+                    baseparm
+                    label   "Color"
+                    export  none
+                }
+            }
+
+        }
+
+    }
+
+    group {
+        name    "folder3_1"
+        label   "geo_src"
+
+        parm {
+            name    "framegen"
+            baseparm
+            label   "Evaluate Using"
+            export  none
+        }
+        parm {
+            name    "framerange"
+            baseparm
+            label   "Frame Range"
+            export  none
+        }
+        parm {
+            name    "soppathgeo"
+            baseparm
+            label   "SOP path"
+            export  none
+        }
+        parm {
+            name    "outpathgeo"
+            baseparm
+            label   "Output File"
+            export  none
+        }
+        parm {
+            name    "framebatch"
+            baseparm
+            label   "Frame per Batch"
+            export  none
+        }
+        parm {
+            name    "allframebatch"
+            baseparm
+            label   "All Frames in one Batch"
+            export  none
+        }
+    }
+
+    group {
+        name    "folder3_2"
+        label   "sim"
+
+        parm {
+            name    "generation"
+            baseparm
+            label   "Generate When"
+            export  none
+        }
+        parm {
+            name    "cachemode"
+            baseparm
+            label   "Cache Mode"
+            export  none
+        }
+        parm {
+            name    "soppathsim"
+            baseparm
+            label   "Sop Path"
+            export  none
+        }
+        parm {
+            name    "outputgeosim"
+            baseparm
+            label   "Output"
+            export  none
+        }
+        parm {
+            name    "framebatch3"
+            baseparm
+            label   "Frame per Batch"
+            export  none
+        }
+        parm {
+            name    "allbatch"
+            baseparm
+            label   "All Batch"
+            export  none
+        }
+    }
+
+    group {
+        name    "folder3_3"
+        label   "render"
+
+        groupsimple {
+            name    "opengl2"
+            label   "OpenGL"
+
+            parm {
+                name    "quility"
+                baseparm
+                label   "Quality"
+                export  none
+            }
+            parm {
+                name    "framebatch2"
+                baseparm
+                label   "Frame per Batch"
+                export  none
+            }
+            parm {
+                name    "allframebatch2"
+                baseparm
+                label   "All Frames in one Batch"
+                export  none
+            }
+            parm {
+                name    "camera"
+                baseparm
+                label   "Camera"
+                export  none
+            }
+            parm {
+                name    "scenepath"
+                baseparm
+                label   "Scene"
+                export  none
+            }
+            parm {
+                name    "forceobjects"
+                baseparm
+                label   "Force Objects"
+                export  none
+            }
+            parm {
+                name    "candidateobjects"
+                baseparm
+                label   "Candidate Objects"
+                invisible
+                export  none
+            }
+            parm {
+                name    "outputimage"
+                baseparm
+                label   "Output Image"
+                export  none
+            }
+            parm {
+                name    "antialias"
+                baseparm
+                label   "Anti Aliasing"
+                invisible
+                export  none
+            }
+            parm {
+                name    "lightsample"
+                baseparm
+                label   "Light Samples"
+                invisible
+                export  none
+            }
+        }
+
+        parm {
+            name    "sepparm"
+            baseparm
+            label   "Separator"
+            export  none
+        }
+        groupsimple {
+            name    "compositing2"
+            label   "Compositing"
+
+            parm {
+                name    "overlaytext"
+                baseparm
+                label   "Overlay Text"
+                export  none
+            }
+            parm {
+                name    "outputpicture"
+                baseparm
+                label   "Output Picture"
+                export  none
+            }
+            parm {
+                name    "allbatch2"
+                baseparm
+                label   "All Batch"
+                invisible
+                export  none
+            }
+        }
+
+        groupsimple {
+            name    "mosaic2"
+            label   "Mosaic"
+
+            parm {
+                name    "usecoppath"
+                baseparm
+                label   "Use External COP"
+                invisible
+                export  none
+            }
+            parm {
+                name    "coppath"
+                baseparm
+                label   "COP path"
+                export  none
+            }
+            parm {
+                name    "allbatch3"
+                baseparm
+                label   "All Frames in Batch"
+                export  none
+            }
+            parm {
+                name    "framesperbatch"
+                baseparm
+                label   "Frames per Batch"
+                export  none
+            }
+        }
+
+    }
+
+    parm {
+        name    "sepparm2"
+        baseparm
+        label   "Separator"
+        export  none
+    }
+    parm {
+        name    "make_wedger"
+        baseparm
+        label   "Make Wedger"
+        export  none
+    }
+
+}
